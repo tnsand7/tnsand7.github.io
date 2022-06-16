@@ -1,34 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# 포트폴리오 설명
 
-First, run the development server:
+
+
+## 프로젝트 실행방법
 
 ```bash
+
+npm install
 npm run dev
-# or
-yarn dev
+127.0.0.1 접속
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 개발 환경
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+"dependencies": {
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+"@types/styled-components": "^5.1.25",
 
-## Learn More
+"next": "^12.1.6",
 
-To learn more about Next.js, take a look at the following resources:
+"react": "^18.1.0",
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+"react-dom": "^18.1.0",
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+"smoothscroll-polyfill": "^0.4.4",
 
-## Deploy on Vercel
+"styled-components": "^5.3.5",
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+"url-loader": "^4.1.1"
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+},
+
+
+
+"devDependencies": {
+
+"@svgr/webpack": "^6.2.1",
+
+"@types/lodash": "^4.14.182",
+
+"@types/node": "17.0.32",
+
+"@types/react": "18.0.9"
+
+"@types/smoothscroll-polyfill": "^0.3.1",
+
+"@typescript-eslint/eslint-plugin": "^5.23.0",
+
+"@typescript-eslint/parser": "^5.23.0",
+
+"babel-plugin-styled-components": "^2.0.7",
+
+"eslint": "^8.15.0",
+
+"eslint-config-airbnb": "^19.0.4",
+
+"eslint-config-next": "12.1.6",
+
+"typescript": "4.6.4"
+
+}
+
+```
+
+
+
+## 배포
+```bash
+vercel
+```
