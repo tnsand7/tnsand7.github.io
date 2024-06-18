@@ -1,43 +1,43 @@
-import styled, { css } from 'styled-components';
-import Colors from 'styles/Colors';
-import { Device } from 'styles/Device';
+import styled, { css } from 'styled-components'
+import Colors from 'styles/Colors'
+import { Device } from 'styles/Device'
 
 export type NavigationBarProps = {
-  isFixed: boolean;
-};
+  isFixed: boolean
+}
 
 export default function NavigationBar({ isFixed }: NavigationBarProps): JSX.Element {
   const handleClick = (e: React.MouseEvent<HTMLElement>) => {
-    const targetId = String(e.currentTarget.dataset.key);
+    const targetId = String(e.currentTarget.dataset.key)
     document.getElementById(targetId)?.scrollIntoView({
       behavior: 'smooth',
-    });
-  };
+    })
+  }
 
   return (
     <StyledNavigationBar isFixed={isFixed}>
       <StyledNavigationItemBox>
-        <StyledNavigationItem data-key="aboutme" onClick={handleClick}>
+        <StyledNavigationItem data-key='aboutme' onClick={handleClick}>
           ABOUT ME
         </StyledNavigationItem>
-        <StyledNavigationItem data-key="skills" onClick={handleClick}>
+        <StyledNavigationItem data-key='skills' onClick={handleClick}>
           SKILLS
         </StyledNavigationItem>
-        <StyledNavigationItem data-key="history" onClick={handleClick}>
+        <StyledNavigationItem data-key='history' onClick={handleClick}>
           HISTORY
         </StyledNavigationItem>
-        <StyledNavigationItem data-key="aboutworkexperience" onClick={handleClick}>
+        <StyledNavigationItem data-key='aboutworkexperience' onClick={handleClick}>
           EXPERIENCE
         </StyledNavigationItem>
-        <StyledNavigationItem data-key="projects" onClick={handleClick}>
+        <StyledNavigationItem data-key='projects' onClick={handleClick}>
           PROJECTS
         </StyledNavigationItem>
-        <StyledNavigationItem data-key="companies" onClick={handleClick}>
+        <StyledNavigationItem data-key='companies' onClick={handleClick}>
           COMPANIES
         </StyledNavigationItem>
       </StyledNavigationItemBox>
     </StyledNavigationBar>
-  );
+  )
 }
 
 const StyledNavigationItemBox = styled.ul`
@@ -52,7 +52,7 @@ const StyledNavigationItemBox = styled.ul`
     gap: 20px;
     font-size: 16px;
   }
-`;
+`
 
 const StyledNavigationItem = styled.li`
   transition: font-size ease 0.8s, color ease 0.4s;
@@ -61,7 +61,7 @@ const StyledNavigationItem = styled.li`
   &:hover {
     color: ${Colors.vividCyan};
   }
-`;
+`
 
 const StyledNavigationBar = styled.nav<{ isFixed: boolean }>`
   position: fixed;
@@ -94,4 +94,4 @@ const StyledNavigationBar = styled.nav<{ isFixed: boolean }>`
         }
       }
     `}
-`;
+`

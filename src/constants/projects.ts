@@ -213,6 +213,24 @@ export const PROJECTS: TProject[] = shuffle([
     title: `부분취소/부분사용 작업`,
     visible: true,
   },
+  {
+    id: 501,
+    key: `cjlogistics`,
+    title: `"더 운반" 화주웹 신규 개발 및 그랜드오픈 참여`,
+    visible: true,
+  },
+  {
+    id: 502,
+    key: `cjlogistics`,
+    title: `"더 운반" 어드민 신규 개발`,
+    visible: true,
+  },
+  {
+    id: 503,
+    key: `cjlogistics`,
+    title: `"더 운반" 어드민 & 화주웹 개발 및 유지보수`,
+    visible: true,
+  },
 ]);
 
 export const PROJECTS_DETAIL = [
@@ -248,8 +266,7 @@ export const PROJECTS_DETAIL = [
       '학부모들에게 발송되는 문자내에 포함된 링크를 통하여 각 자녀의 요일별 등하원정보를 네이버지도를 활용하여 기재할 수 있습니다.',
     task: '환경구축 & 배포환경구축 & 개발',
     workingTime: '3주 이내',
-    frontend:
-      'React With JavaScript, MobX, HTML5, Scss, Material-UI, Storybook, Figma, Zeplin, Naver Map',
+    frontend: 'React With JavaScript, MobX, HTML5, Scss, Material-UI, Storybook, Figma, Zeplin, Naver Map',
     backend: 'AWS ELB & EC2, Amazon S3, AWS Cloud front, Spring Boot, JWT Web Token, MySQL',
     otherTools: 'Bitbucket, Sourcetree, Swagger, Jira, Notion, Slack',
   },
@@ -260,8 +277,7 @@ export const PROJECTS_DETAIL = [
     subTitle: '로그인 & 태블릿관리 & 공지사항 & 운영자관리 페이지에 대한 작업입니다.',
     task: 'JWT토큰활용 로그인 & 태블릿관리 & 공지사항 & 운영자관리 페이지에대한 작업진행을 하면서 전반적인 공통 컴포넌트개발(toast, modal, table, button...등)도 같이 진행되었습니다.',
     workingTime: '∞',
-    frontend:
-      'React With JavaScript, MobX, HTML5, Scss, Material-UI, Storybook, Figma, Zeplin, react-quill editor',
+    frontend: 'React With JavaScript, MobX, HTML5, Scss, Material-UI, Storybook, Figma, Zeplin, react-quill editor',
     backend: 'AWS ELB & EC2, Amazon S3, AWS Cloud front, Spring Boot, JWT Web Token, MySQL',
     otherTools: 'Bitbucket, Sourcetree, Swagger, Jira, Notion, Slack',
   },
@@ -327,8 +343,7 @@ export const PROJECTS_DETAIL = [
     id: 103,
     duties: ['Front-End', 'Back-End'],
     mainTitle: 'okvit plus앱 개발 진행',
-    subTitle:
-      '약 200여곳의 국내쇼핑몰(젝시믹스,뮬라웨어,모코블링,체리코코등)에 판매하는 상품에 대한 역직구앱입니다.',
+    subTitle: '약 200여곳의 국내쇼핑몰(젝시믹스,뮬라웨어,모코블링,체리코코등)에 판매하는 상품에 대한 역직구앱입니다.',
     task: '개발 및 유지보수',
     workingTime: '한개월 소요',
     frontend: 'HTML5, JavaScript, jQuery, CSS',
@@ -375,8 +390,7 @@ export const PROJECTS_DETAIL = [
     id: 200,
     duties: ['Front-End', 'Back-End'],
     mainTitle: 'Paypal checkout 간편결제',
-    subTitle:
-      '고객사중 페이팔결제방식연동 요청업체가 존재하여 paypal에서제공해주는 checkout방식으로 연동진행',
+    subTitle: '고객사중 페이팔결제방식연동 요청업체가 존재하여 paypal에서제공해주는 checkout방식으로 연동진행',
     task: '개발 및 유지보수',
     workingTime: '1주 이내',
     frontend: 'HTML5, JavaScript, jQuery, CSS',
@@ -400,8 +414,7 @@ export const PROJECTS_DETAIL = [
     id: 202,
     duties: ['Front-End', 'Back-End'],
     mainTitle: '트래킹수집프로그램',
-    subTitle:
-      'selenium을 활용하여 해외쇼핑몰(ex. 아마존)로부터 트래킹정보를 가져오는 프로그램을 개발하였습니다.',
+    subTitle: 'selenium을 활용하여 해외쇼핑몰(ex. 아마존)로부터 트래킹정보를 가져오는 프로그램을 개발하였습니다.',
     task: '개발 및 유지보수',
     workingTime: '2주 이내',
     frontend: 'HTML5, JavaScript, jQuery, CSS',
@@ -475,8 +488,7 @@ export const PROJECTS_DETAIL = [
     id: 208,
     duties: ['Front-End', 'Back-End'],
     mainTitle: '사내업무일지(HTask)',
-    subTitle:
-      '직원별 업무관리를 웹에서 간편하게 일일업무보고를 할 수 있도록 만든 프로그램을 개발하였습니다.',
+    subTitle: '직원별 업무관리를 웹에서 간편하게 일일업무보고를 할 수 있도록 만든 프로그램을 개발하였습니다.',
     task: '기획 & 개발 & 퍼블리싱 및 유지보수',
     workingTime: '1개월 이내',
     frontend: 'HTML5, JavaScript, jQuery, Bootstrap, CSS, jqGrid',
@@ -487,8 +499,7 @@ export const PROJECTS_DETAIL = [
     id: 209,
     duties: ['Front-End', 'Back-End'],
     mainTitle: '이니페이에스크로배송등록',
-    subTitle:
-      '이니시스 에스크로 배송등록 및 수정을 쇼핑몰관리자페이지에서 가능하도록 하는 기능을 개발하였습니다.',
+    subTitle: '이니시스 에스크로 배송등록 및 수정을 쇼핑몰관리자페이지에서 가능하도록 하는 기능을 개발하였습니다.',
     task: '기획 & 개발 & 퍼블리싱 및 유지보수',
     workingTime: '1개월 이내',
     frontend: 'HTML5, JavaScript, jQuery, CSS',
@@ -499,8 +510,7 @@ export const PROJECTS_DETAIL = [
     id: 210,
     duties: ['Front-End', 'Back-End'],
     mainTitle: '국외 SNS Weibo 간편로그인 연동',
-    subTitle:
-      '해외구매대행 솔루션을 이용하는 업체 쇼핑몰내에 중국 메신저인 Weibo 간편로그인기능을 개발하였습니다.',
+    subTitle: '해외구매대행 솔루션을 이용하는 업체 쇼핑몰내에 중국 메신저인 Weibo 간편로그인기능을 개발하였습니다.',
     task: 'Weibo API를 이용한 간편로그인 연동작업',
     workingTime: '1주 이내',
     frontend: 'HTML5, JavaScript, jQuery, CSS',
@@ -523,8 +533,7 @@ export const PROJECTS_DETAIL = [
     id: 212,
     duties: ['Front-End', 'Back-End'],
     mainTitle: 'Orange(구매대행솔루션관리자)',
-    subTitle:
-      '해외구매 대행 업무에 최적화된 쇼핑몰 프로그램으로 유지보수 및 커스터마이징을 진행하였습니다. ',
+    subTitle: '해외구매 대행 업무에 최적화된 쇼핑몰 프로그램으로 유지보수 및 커스터마이징을 진행하였습니다. ',
     task: '전반적인 모든 부분에 대한 유지보수 및 커스터마이징진행',
     workingTime: '∞',
     frontend: 'HTML5, JavaScript, jQuery, CSS, XML',
@@ -551,8 +560,7 @@ export const PROJECTS_DETAIL = [
       '배송대행지의 물류창고에서 사용되는 입고부터 출고까지의 모든 과정을 관리하는 프로그램으로 유지보수 및 커스터마이징을 진행하였습니다.',
     task: '전반적인 모든 부분에 대한 유지보수 및 커스터마이징진행',
     workingTime: '∞',
-    frontend:
-      'MVC 기반으로 자체 개발 된 사내 프레임워크, HTML5, JavaScript, jQuery, jqGrid, CSS, XML',
+    frontend: 'MVC 기반으로 자체 개발 된 사내 프레임워크, HTML5, JavaScript, jQuery, jqGrid, CSS, XML',
     backend: 'Windows, PHP4, CUBRID',
     otherTools: 'FTP',
   },
@@ -562,8 +570,7 @@ export const PROJECTS_DETAIL = [
     id: 300,
     duties: ['Front-End', 'Back-End'],
     mainTitle: '한국산업기술평가관리원(KEIT) 사내경영정보시스템(MIS) 재구축 및 모바일개발참여',
-    subTitle:
-      '기존 ASP로 되어있던 시스템을 Xplatform & 전자정부프레임워크로 변경하는 프로젝트입니다.',
+    subTitle: '기존 ASP로 되어있던 시스템을 Xplatform & 전자정부프레임워크로 변경하는 프로젝트입니다.',
     task: 'Xplatform을 이용한 기본메뉴개발 / Rexpert를 이용한 메뉴별 문서서식작성 및 데이터매칭작업 / 사내경영정보시스템 모바일버전 개발',
     workingTime: '7개월 소요',
     frontend: 'JSP, HTML, JavaScript, jQuery, CSS',
@@ -574,8 +581,7 @@ export const PROJECTS_DETAIL = [
     id: 301,
     duties: ['Front-End', 'Back-End'],
     mainTitle: '인천 & 충남소방서 소방장비관리프로그램',
-    subTitle:
-      '인천 & 중남소방서에서 사용되는 소방장비관리프로그램에 대해 유지보수 및 커스터마이징을 진행하였습니다.',
+    subTitle: '인천 & 중남소방서에서 사용되는 소방장비관리프로그램에 대해 유지보수 및 커스터마이징을 진행하였습니다.',
     task: '유지보수 및 커스터마이징작업',
     workingTime: '∞',
     frontend: 'egovframework, MVC2, JSP, HTML, JavaScript, jQuery, CSS.',
@@ -589,8 +595,7 @@ export const PROJECTS_DETAIL = [
     subTitle: '[놀발웹] 라운지에서 놀발웹으로 이식하기위해 진행된 작업입니다.',
     task: '이벤트모아보기, 우리아이 페이지 기능 개발',
     workingTime: '1개월 이내',
-    frontend:
-      'React With TypeScript, NextJs, Redux, Redux-Toolkit, styled-components, Figma, Zeplin',
+    frontend: 'React With TypeScript, NextJs, Redux, Redux-Toolkit, styled-components, Figma, Zeplin',
     otherTools: 'Github, Sourcetree, Postman, Jira, Notion, Confluence, Slack',
   },
   {
@@ -600,8 +605,7 @@ export const PROJECTS_DETAIL = [
     subTitle: '회원가입 전환율 상승을 위한 로그인/회원가입 프로세스 개선 작업입니다.',
     task: '퍼블리싱/기능 개발',
     workingTime: '1개월 이내',
-    frontend:
-      'React With TypeScript, NextJs, Redux, Redux-Toolkit, styled-components, Figma, Zeplin',
+    frontend: 'React With TypeScript, NextJs, Redux, Redux-Toolkit, styled-components, Figma, Zeplin',
     otherTools: 'Github, Sourcetree, Postman, Jira, Notion, Confluence, Slack',
   },
   {
@@ -619,8 +623,7 @@ export const PROJECTS_DETAIL = [
     id: 403,
     duties: ['Front-End'],
     mainTitle: '[CPM] 선사용티켓관련 작업',
-    subTitle:
-      '구매형 상품에대해 고객 방문 날짜 확정 니즈 충족을 위해 진행된 선사용 티켓 기능개발 작업입니다.',
+    subTitle: '구매형 상품에대해 고객 방문 날짜 확정 니즈 충족을 위해 진행된 선사용 티켓 기능개발 작업입니다.',
     task: '퍼블리싱/기능 개발',
     workingTime: '1개월 이내',
     frontend: 'React With TypeScript, CRA, Redux, Redux-Toolkit,styled-components, Figma, Zeplin',
@@ -633,20 +636,17 @@ export const PROJECTS_DETAIL = [
     subTitle: '라운지내에 있는 스토어기능을 놀발웹으로 이식하기위해 진행된 작업입니다.',
     task: '퍼블리싱/기능 개발',
     workingTime: '4개월 이내',
-    frontend:
-      'React With TypeScript, NextJs, Redux, Redux-Toolkit,styled-components, Figma, Zeplin',
+    frontend: 'React With TypeScript, NextJs, Redux, Redux-Toolkit,styled-components, Figma, Zeplin',
     otherTools: 'Github, Sourcetree, Postman, Jira, Notion, Confluence, Slack',
   },
   {
     id: 406,
     duties: ['Front-End'],
     mainTitle: '[놀발웹] 클럽포인트/P포인트(=웅진포인트) 연동',
-    subTitle:
-      '결제시 결제수단으로 클럽포인트/P포인트(=웅진포인트)를 사용할 수 있도록 하기위해 진행된 작업입니다.',
+    subTitle: '결제시 결제수단으로 클럽포인트/P포인트(=웅진포인트)를 사용할 수 있도록 하기위해 진행된 작업입니다.',
     task: '퍼블리싱/기능 개발',
     workingTime: '1개월 이내',
-    frontend:
-      'React With TypeScript, NextJs, Redux, Redux-Toolkit,styled-components, Figma, Zeplin',
+    frontend: 'React With TypeScript, NextJs, Redux, Redux-Toolkit,styled-components, Figma, Zeplin',
     otherTools: 'Github, Sourcetree, Postman, Jira, Notion, Confluence, Slack',
   },
   {
@@ -656,8 +656,7 @@ export const PROJECTS_DETAIL = [
     subTitle: '결제후 부분취소 혹은 부분사용이 가능하도록 하기위해 진행된 작업입니다.',
     task: '퍼블리싱/기능 개발',
     workingTime: '3개월 이내',
-    frontend:
-      'React With TypeScript, NextJs, Redux, Redux-Toolkit,styled-components, Figma, Zeplin',
+    frontend: 'React With TypeScript, NextJs, Redux, Redux-Toolkit,styled-components, Figma, Zeplin',
     otherTools: 'Github, Sourcetree, Postman, Jira, Notion, Confluence, Slack',
   },
 ];

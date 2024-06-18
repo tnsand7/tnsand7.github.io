@@ -11,6 +11,7 @@ export const SKILLS = [
     name: 'Libraries',
     content: [
       'React',
+      'React-Query',
       'jQuery',
       'jqGrid',
       'Ajax',
@@ -18,6 +19,7 @@ export const SKILLS = [
       'Bootstrap',
       'Material-UI',
       'SCSS',
+      'tailwind',
       'styled-components',
       'GraphQL',
       'Apollo',
@@ -29,11 +31,11 @@ export const SKILLS = [
   },
   {
     name: 'React state management libraries',
-    content: ['MobX', 'Redux', 'Redux-Saga', 'Redux-Toolkit'],
+    content: ['Zustand', 'MobX', 'Redux', 'Redux-Saga', 'Redux-Toolkit'],
   },
   {
     name: 'Version Control Tools',
-    content: ['SVN', 'Github'],
+    content: ['SVN', 'Github', 'Gitlab'],
   },
   {
     name: 'Code Quality Tool & Etc',
@@ -47,10 +49,12 @@ export const SKILLS = [
       'Figma',
       'Sourcetree',
       'Bitbucket',
+      'Fork',
       'Jira',
       'Notion',
       'Confluence',
       'Swagger',
+      'RestDocs',
       'Postman',
       'Slack',
     ],

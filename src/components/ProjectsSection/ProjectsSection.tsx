@@ -16,7 +16,7 @@ export default function ProjectsSection(): JSX.Element {
   const [selectedProjectId, setSelectedProjectId] = useState(1);
   const { getProjectsOffset, getCookedData } = useProjects();
   const projectsRef = useRef<TProjectRef[]>(new Array(projects.length));
-  const filters = [...new Set(PROJECTS.map((p) => p.key))];
+  const filters = [...new Set(PROJECTS.map(p => p.key))];
 
   const handleFilterItemClick = (e: React.MouseEvent<HTMLElement>) => {
     const tempSelectedKey = String(e.currentTarget.dataset.key);
@@ -46,7 +46,7 @@ export default function ProjectsSection(): JSX.Element {
   }, [selectedKey]);
 
   return (
-    <StyledProjectsSection id="projects">
+    <StyledProjectsSection id='projects'>
       {isOpenModal && <ProjectDetailModal projectId={selectedProjectId} closeModal={toggleModal} />}
       <StyledTitle>PROJECTS</StyledTitle>
       <ProjectsFilter filters={filters} selectedKey={selectedKey} onClick={handleFilterItemClick} />

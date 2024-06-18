@@ -36,8 +36,14 @@ export const COMPANIES = [
     height: '15px',
   },
   {
-    name: 'woongjin',
-    src: '/images/logo/logo-woongjin.png',
+    name: 'cjlogistics',
+    src: '/images/logo/logo-cjlogistics.png',
+    width: '120px',
+    height: '45px',
+  },
+  {
+    name: 'theunban',
+    src: '/images/logo/logo-theunban.png',
     width: '120px',
     height: '45px',
   },

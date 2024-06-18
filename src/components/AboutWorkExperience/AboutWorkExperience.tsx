@@ -8,22 +8,19 @@ import type { TExperience } from 'constants/experience';
 import { SmallCircleIcon } from 'assets/icons';
 
 export default function AboutWorkExperience(): JSX.Element {
-  const [arrOpen, setArrOpen] = useState(Array.from({ length: EXPERIENCE.length }, () => false));
   const [selectedKey, setSelectedKey] = useState(1);
-  const [experience, setExperience] = useState<TExperience>(
-    EXPERIENCE.filter((data) => data.id === selectedKey)[0]
-  );
+  const [experience, setExperience] = useState<TExperience>(EXPERIENCE.filter(data => data.id === selectedKey)[0]);
 
   const handleTabClick = (id: number) => {
     setSelectedKey(id);
   };
 
   useEffect(() => {
-    setExperience(EXPERIENCE.filter((data) => data.id === selectedKey)[0]);
+    setExperience(EXPERIENCE.filter(data => data.id === selectedKey)[0]);
   }, [selectedKey]);
 
   return (
-    <StyledAboutWorkExperience id="aboutworkexperience">
+    <StyledAboutWorkExperience id='aboutworkexperience'>
       <StyledTitle>ABOUT WORK EXPERIENCE</StyledTitle>
       <StyledBox>
         <StyledBoxHeader>
@@ -33,19 +30,15 @@ export default function AboutWorkExperience(): JSX.Element {
             <SmallCircleIcon />
           </StyledIconBlock>
           <StyledTabBlock>
-            {EXPERIENCE?.map((data) => (
-              <StyledTabItem
-                isActive={selectedKey === data.id}
-                key={data.id}
-                onClick={() => handleTabClick(data.id)}
-              >
+            {EXPERIENCE?.map(data => (
+              <StyledTabItem isActive={selectedKey === data.id} key={data.id} onClick={() => handleTabClick(data.id)}>
                 {data.name}
               </StyledTabItem>
             ))}
           </StyledTabBlock>
         </StyledBoxHeader>
         <StyledBoxBody>
-          {experience?.description?.map((description) => (
+          {experience?.description?.map(description => (
             <p key={description}>- {description}</p>
           ))}
         </StyledBoxBody>

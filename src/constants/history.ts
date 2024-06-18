@@ -7,7 +7,25 @@ export type THistory = {
 
 export const HISTORY = [
   {
-    date: '2022.04 ~ 현재',
+    date: '2022.08 ~ 현재',
+    company: '씨제이대한통운',
+    title: '더 운반',
+    description: ['"더 운반" 어드민 & 화주웹 개발 및 유지보수'],
+  },
+  {
+    date: '2022.12 ~ 2023.03',
+    company: '씨제이대한통운',
+    title: '더 운반',
+    description: ['"더 운반" 어드민 신규 개발'],
+  },
+  {
+    date: '2022.08 ~ 2023.07',
+    company: '씨제이대한통운',
+    title: '더 운반',
+    description: ['"더 운반" 화주웹 신규 개발 및 그랜드오픈 참여'],
+  },
+  {
+    date: '2022.04 ~ 2022.08',
     company: '놀이의 발견',
     title: '놀발웹, 라운지',
     description: ['부분취소/부분사용 작업'],
@@ -28,9 +46,7 @@ export const HISTORY = [
     date: '2021.12',
     company: '놀이의 발견',
     title: 'CPM',
-    description: [
-      '구매형 상품에대해 고객 방문 날짜 확정 니즈 충족을 위해 진행된 선사용 티켓 CPM 작업',
-    ],
+    description: ['구매형 상품에대해 고객 방문 날짜 확정 니즈 충족을 위해 진행된 선사용 티켓 CPM 작업'],
   },
   {
     date: '2021.11',
@@ -159,9 +175,7 @@ export const HISTORY = [
     date: '2017.08',
     company: '하경소프트',
     title: 'Elibox',
-    description: [
-      '전반적인 모든 물류창고 관리 로직 기획 및 개발, 관리자/사용자 UI 기획 및 개발, 유지보수',
-    ],
+    description: ['전반적인 모든 물류창고 관리 로직 기획 및 개발, 관리자/사용자 UI 기획 및 개발, 유지보수'],
   },
   {
     date: '2017.06',

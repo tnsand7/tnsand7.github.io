@@ -7,13 +7,13 @@ import { Device } from 'styles/Device';
 
 export default function SkillsSection(): JSX.Element {
   return (
-    <StyledSkillsSection id="skills">
+    <StyledSkillsSection id='skills'>
       <StyledTitle>SKILLS</StyledTitle>
-      {SKILLS?.map((skill) => (
+      {SKILLS?.map(skill => (
         <StyledBox key={skill.name}>
           <StyledName>{skill.name}</StyledName>
           <StyledContent>
-            {skill.content?.map((content) => (
+            {skill.content?.map(content => (
               <StyledText key={content}>{content}</StyledText>
             ))}
           </StyledContent>

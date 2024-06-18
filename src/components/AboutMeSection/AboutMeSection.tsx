@@ -2,10 +2,36 @@ import styled from 'styled-components';
 import Colors from 'styles/Colors';
 import { StyledTitle, StyledBox, StyledName, StyledContent } from 'components/styles';
 import { Device } from 'styles/Device';
+import { useEffect } from 'react';
 
 export default function AboutMeSection(): JSX.Element {
+  useEffect(() => {
+    const plays = [500, 600, 150, 800, 2500];
+    const genres = ['classic', 'pop', 'classic', 'classic', 'pop'];
+
+    const hashTables = genres.reduce((acc: any, genre, idx) => {
+      acc[genre] = acc[genre]
+        ? {
+            total: acc[genre].total + plays[idx],
+            datas: [...acc[genre].datas, idx].sort((a: any, b: any) => plays[b] - plays[a]),
+          }
+        : {
+            total: plays[idx],
+            datas: [idx],
+          };
+
+      return acc;
+    }, {});
+
+    const answer = Object.keys(hashTables)
+      .sort((a, b) => hashTables[b].total - hashTables[a].total)
+      .reduce((acc: any, key) => {
+        return [...acc, ...hashTables[key].datas.splice(0, 2)];
+      }, []);
+  }, []);
+
   return (
-    <StyledAboutMeSection id="aboutme">
+    <StyledAboutMeSection id='aboutme'>
       <StyledTitle>ABOUT ME</StyledTitle>
       <StyledBox>
         <StyledName>Name</StyledName>
@@ -31,10 +57,11 @@ export default function AboutMeSection(): JSX.Element {
           <StyledHashTag># 구매대행 및 배송대행관련 e-커머스서비스 경험</StyledHashTag>
           <StyledHashTag># 학원차량 공유관련 모빌리티서비스 경험</StyledHashTag>
           <StyledHashTag># 키즈 앱 플랫폼 서비스 경험</StyledHashTag>
-          <StyledHashTag># 개발기간을 단 한번도 넘겨본 적 없는 직원</StyledHashTag>
+          <StyledHashTag># 운송 플랫폼 서비스 경험</StyledHashTag>
+          <StyledHashTag># 개발기한을 단 한번도 넘겨본 적 없는 직원</StyledHashTag>
           <StyledHashTag># 빠른 코드분석 및 업무파악으로 단시간내에 실무수행 가능</StyledHashTag>
           <StyledHashTag>
-            # Back-End 개발 경험에 의한 좀 더 수월한 API 연동 작업 및 백엔드개발팀과의 소통 능력
+            # Back-End 개발 경험에 의한 좀 더 수월한 API 연동 작업 및 백엔드개발팀과의 원활한 소통 능력
           </StyledHashTag>
         </StyledHashTagContent>
       </StyledBox>

@@ -14,21 +14,18 @@ export default function HistorySection(): JSX.Element {
 
   const handleReadMoreButton = () => {
     if (history.length < HISTORY.length) {
-      setOffset((prevState) => (prevState += 1));
+      setOffset(prevState => (prevState += 1));
     }
   };
 
   useEffect(() => {
     if (offset > 0) {
-      setHistory((prevState) => [
-        ...prevState,
-        ...HISTORY.slice(offset * LIMIT, offset * LIMIT + LIMIT),
-      ]);
+      setHistory(prevState => [...prevState, ...HISTORY.slice(offset * LIMIT, offset * LIMIT + LIMIT)]);
     }
   }, [offset]);
 
   return (
-    <StyledHistorySection id="history">
+    <StyledHistorySection id='history'>
       <StyledTitle>HISTORY</StyledTitle>
       <StyledTimelineBox>
         {history?.map((data, idx) => (
@@ -40,7 +37,7 @@ export default function HistorySection(): JSX.Element {
           </StyledTimeline>
         ))}
         {history.length < HISTORY.length && (
-          <StyledReadMoreButton type="button" onClick={handleReadMoreButton}>
+          <StyledReadMoreButton type='button' onClick={handleReadMoreButton}>
             View More!
           </StyledReadMoreButton>
         )}
