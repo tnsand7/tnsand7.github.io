@@ -7,7 +7,7 @@ export type THistory = {
 
 export const HISTORY = [
   {
-    date: '2022.08 ~ 현재',
+    date: '2022.08 ~ 2024.11',
     company: '씨제이대한통운',
     title: '더 운반',
     description: ['"더 운반" 어드민 & 화주웹 개발 및 유지보수'],
